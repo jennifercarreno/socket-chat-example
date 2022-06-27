@@ -44,6 +44,13 @@
             window.scrollTo(0, document.body.scrollHeight);
         });
 
+        socket.on('connect', function() {
+            var item = document.createElement('li');
+            item.textContent = "a user connected";
+            messages.appendChild(item);
+            window.scrollTo(0, document.body.scrollHeight);
+        });
+
     </script>
   </body>
 </html>
